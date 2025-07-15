@@ -1,0 +1,183 @@
+body{
+    background: url('https://aerospace.honeywell.com/content/dam/aerobt/en/images/horizontal/IntuVue-2880x1440-optimized.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    width: 100%;
+}   
+.searchBar{
+    height: 10vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.inputfield{
+    outline: none;
+}
+.searchBarparentDiv{
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    
+}
+.inputfield{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0%;
+
+}
+.searchIon{
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 0%;
+    right: 0px;
+    top: 5px;
+    width: 70px;
+}
+.searchIon:hover{
+    cursor: pointer;
+}
+.mainContentParentDiv{
+    height: 90vh;
+    flex-direction: row;
+}
+.leftDiv{
+    width: 30%;
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightDiv{
+    width: 70%;
+   
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: px;
+}
+.leftChild{
+    background: rgba(212,212,212,0.4);
+    width: 85%;
+    height: 40vh;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+.currentTempDiv{
+    font-size: larger;
+}
+#cityName{
+    font-size: xx-large;
+}
+#cityTemp{
+    font-size: x-large;
+}
+#comingFiveDaysTitle{
+    font-size: x-large;
+}
+.rightRow{
+    height: 27vh;
+    width: 100;
+   
+}
+.extraMetric{
+    background: rgba(212,212,212,0.4);
+    padding: 5% 2%;
+    width: fit-content;
+    border-radius: 15px;
+    align-items: center;
+}
+.AQI{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    width: 45%;
+    height: 85%;
+}
+.rowTwoDiv{
+    background: rgba(212,212,212,0.4);
+    backdrop-filter: blur(15px);
+    width: 45%;
+    height: 85%;
+    border-radius: 15px;
+}
+.todayTemp{
+    background: rgba(212,212,212,0.4);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    margin: 5px ;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+@media only screen and (max-width:767px){
+    .rightDiv{
+        width: 100%;
+    }
+    .leftDiv{
+        width: 100%;
+       gap: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .mainContentParentDiv{
+        height: 90vh;
+        flex-direction: column;
+    }
+    .searchBar{
+        width: 100%;
+    }
+    .searchBarparentDiv{
+        width: 85%;
+        height: fit-content;
+        position: relative;
+        
+    }
+    .rowOne{
+       flex-wrap: wrap;
+       width: 85%;
+       margin: auto;
+    }
+    .rowTwo{
+        flex-direction: column;
+     
+    }
+    .rowTwo{
+        gap: 10px;
+        height: 30vh;
+    }
+    .rowTwoDiv{
+        background: rgba(212,212,212,0.4);
+        backdrop-filter: blur(15px);
+        width: 85%;
+        height: 85%;
+        border-radius: 15px;
+    }
+    .rowThree{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .todayTempParentDiv{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 15px;
+    }
+    .inputfield{
+        outline: none;
+    }
+}
